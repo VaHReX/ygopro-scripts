@@ -86,7 +86,7 @@ function c94392192.rmop(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetDecktopGroup(1-tp,ct)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_REMOVE)
 	Duel.RevealSelectDeckSequence(true)
-	local sg=g:FilterSelect(tp,c94392192.rmfilter,1,1,nil,tp)
+	local sg=g:FilterSelect(tp,c94392192.rmfilter,1,1,nil,tp,POS_FACEDOWN)
 	Duel.RevealSelectDeckSequence(false)
 	if #sg>0 then
 		Duel.DisableShuffleCheck(true)
